@@ -1,0 +1,107 @@
+@media (max-width: 575px){
+    .menu-btn{
+        width: 30px;
+        cursor: pointer;
+        z-index: 6;
+        position: relative;
+    }
+    .menu-line{
+        width: 100%;
+        height: 4px;
+        background-color: #b9b9b9;
+        margin-bottom: 3px;
+        border-radius: 20%;
+    }
+    .menu ul{
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 0vw;
+        height: 0vh;
+        z-index: 5;
+        background-color: #fff;
+        transition: all .3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu.active ul {
+        height: 100vh;
+        width: 100vw;
+    }
+    .menu li{
+        display: block;
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    
+    }
+    .menu li + li {
+        margin: 0;
+    }
+    li .active {
+        margin: 0;
+    }
+    .menu a{
+        font-size: 20px;
+    }
+    .slider__item-block{
+        left: 0;
+        bottom: 0;
+        right: 0;
+        max-width: none;
+    }
+    .item{
+        width: 45%;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 910px){
+    .items__inner{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .item{
+        width: 45%;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+    .item-title{
+        padding: 0;
+        max-width: none;
+        margin-top: 30px;
+    }
+    .item-title::before{
+        left: 44%;
+        top: -58px;
+        transform: none;
+    }
+}
+@media (max-width: 580px){
+    .item{
+        width: 400px;
+    }
+}
+@media (max-width: 940px){
+    .works-items-block{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .works-item{
+        margin: 0 42px 15px;
+    }
+
+}
+@media (max-width: 810px){
+    .footer__inner{
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .footer-text{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
